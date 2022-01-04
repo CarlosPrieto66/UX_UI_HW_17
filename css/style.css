@@ -1,4 +1,5 @@
 .navbar {
+  position: relative;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -13,10 +14,14 @@ ul.links {
   padding: 0;
 }
 .nav {
+  font-family: Spartan;
+  font-size: 18px;
+  font-weight: 500;
   text-decoration: none;
   color: white;
 }
 .main {
+  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -32,9 +37,15 @@ ul.links {
 .profile-pic {
   align-self: stretch;
   flex-grow: 1;
-  object-fit: contain;
+  object-fit: fit;
+  width: 100%;
+}
+.profile-pic > img {
+  width: 100%;
+  height: 100%;
 }
 .copy {
+  width: 100%;
   align-self: stretch;
   flex-grow: 1;
   display: flex;
@@ -46,11 +57,27 @@ ul.links {
   background-color: #0c0415;
 }
 h1 {
+  font-family: Spartan;
+  font-size: 34px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.18;
+  letter-spacing: -0.68px;
+  text-align: center;
   color: white;
+  margin: 0px;
 }
 p {
   color: white;
-  padding: 0;
+  font-family: Raleway;
+  font-size: 18px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.17;
+  letter-spacing: normal;
+  text-align: center;
 }
 .buttons {
   display: flex;
@@ -61,6 +88,9 @@ p {
   padding: 0;
 }
 .secondary {
+  font-family: Raleway;
+  font-size: 18px;
+  font-weight: 600;
   border-style: none;
   height: 49px;
   align-self: stretch;
@@ -103,6 +133,24 @@ p {
     linear-gradient(185deg, #f90898 640%, #c32fd6 95%, #9f49fe -513%);
   background-origin: border-box;
   background-clip: content-box, border-box;
+  flex-grow: 0;
+  background-image: linear-gradient(
+    188deg,
+    #f90898 511%,
+    #c32fd6 85%,
+    #9f49fe -391%
+  );
+  font-family: Raleway;
+  font-size: 18px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.17;
+  letter-spacing: normal;
+  text-align: left;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 footer {
   display: flex;
@@ -129,4 +177,10 @@ footer {
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
+}
+.copyright p {
+  font-family: Raleway;
+  font-size: 12px;
+  font-weight: 400;
+  margin: 0px;
 }
