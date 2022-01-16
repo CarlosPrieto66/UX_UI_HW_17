@@ -41,33 +41,21 @@ p {
   font-family: Raleway;
 }
 
-/* button {
+footer {
   font-family: Raleway;
-  font-size: 1rem;
-  font-weight: 600;
-  color: #fff;
-} */
+  font-size: 0.75rem;
+}
+
 .btn {
   font-family: Raleway;
   font-size: 1rem;
   font-weight: 600;
   color: #fff;
 }
-footer {
-  font-family: Raleway;
-  font-size: 0.75rem;
-}
-
 /* ====COMPONENTS===== */
 
 /* ------Buttons------ */
 
-/* button {
-  padding: 0.75em 1.125em;
-  border-radius: 4px;
-  cursor: pointer;
-  color: #fff;
-} */
 .btn {
   padding: 0.75em 1.125em;
   border-radius: 4px;
