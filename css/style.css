@@ -14,11 +14,7 @@ body {
 }
 
 /* ======TYPOGRAPHY==== */
-/* h1,
-h2,
-h3 {
-  margin: 0 auto;
-} */
+
 h1 {
   font-family: Spartan;
   font-size: 2.125rem;
@@ -128,7 +124,7 @@ footer {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-bottom: 2em;
+  padding-bottom: 5em;
   gap: 1em;
   width: 100%;
 }
