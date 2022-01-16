@@ -5,11 +5,12 @@
   list-style: none;
   text-decoration: none;
   box-sizing: border-box;
-  border: 1px solid red;
+  /* border: 1px solid red; */
 }
 body {
   background: var(--dark-mode-500);
   color: white;
+  /* overflow: hidden; */
 }
 
 /* ======TYPOGRAPHY==== */
@@ -40,13 +41,18 @@ p {
   font-family: Raleway;
 }
 
-button {
+/* button {
+  font-family: Raleway;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #fff;
+} */
+.btn {
   font-family: Raleway;
   font-size: 1rem;
   font-weight: 600;
   color: #fff;
 }
-
 footer {
   font-family: Raleway;
   font-size: 0.75rem;
@@ -56,28 +62,54 @@ footer {
 
 /* ------Buttons------ */
 
-button {
+/* button {
   padding: 0.75em 1.125em;
   border-radius: 4px;
   cursor: pointer;
   color: #fff;
+} */
+.btn {
+  padding: 0.75em 1.125em;
+  border-radius: 4px;
+  cursor: pointer;
+  color: #fff;
+  text-align: center;
 }
+/* ------primary------ */
 
 .primary {
   border: none;
   background-color: var(--primary-500);
+  transition-duration: 350ms;
 }
+.primary:hover {
+  background-color: var(--primary-400);
+}
+/* ------secondary------ */
+
 .secondary {
   border: none;
   background-color: var(--secondary-500);
+  transition-duration: 350ms;
 }
+
+.secondary:hover {
+  background-color: var(--secondary-400);
+}
+/* ------transparent------ */
 
 .transparent {
   border: solid 1px var(--primary-50);
   background-color: var(--shades-00);
+  transition-duration: 350ms;
 }
-.gradient {
+.transparent:hover {
+  background-color: var(--primary-50);
+  opacity: 70%;
+  color: var(--primary-900);
 }
+/* ------gradient------ */
+
 /* ====NAVIGATION==== */
 
 .mobile-nav {
@@ -89,11 +121,6 @@ button {
   padding: 0.5em;
   width: 100%;
   background-color: var(--shades-50);
-  /* position: absolute; */
-}
-
-.menu-button {
-  cursor: pointer;
 }
 
 /* =====HOME=====*/
@@ -127,7 +154,7 @@ button {
 }
 /* =====MY WORK=====  */
 
-.mywork {
+main {
   display: flex;
   flex-flow: column;
   align-items: center;
@@ -142,7 +169,7 @@ button {
   flex-flow: column;
   /* margin: 2em 1em; */
   width: 100%;
-  /* max-width: 400px; */
+  max-width: 400px;
 }
 
 .thumbnail {
@@ -174,14 +201,6 @@ button {
 
 /* ====ABOUT==== */
 
-main {
-  display: flex;
-  flex-flow: column;
-  align-items: center;
-  padding: 2rem 1rem;
-  gap: 2em;
-  /* align-content: center; */
-}
 .btn {
   display: flex;
   flex-direction: column;
@@ -232,7 +251,7 @@ footer {
     flex-direction: row;
     max-width: 907px;
   }
-  .mywork > .card {
+  #my-work > .card {
     max-height: 314px;
   }
   .card2 {
