@@ -21,7 +21,8 @@
   --shades-black: #000;
   --shades-00: rgba(0, 0, 0, 0);
   --shades-50: rgba(0, 0, 0, 0.5);
-  --shades-75: rgba(0, 0, 0, 0.8);
+  --shades-75: rgba(0, 0, 0, 0.75);
+  --shades-95: rgba(0, 0, 0, 0.95);
 
   --neutral-50: #f8f7f9;
   --neutral-100: #e8e7ee;
