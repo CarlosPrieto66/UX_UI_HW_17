@@ -42,9 +42,8 @@ header {
   margin-top: 1em;
 }
 nav li {
-  margin: 2em;
+  margin: 2em 1em;
 }
-
 
 /* =====HOME=====*/
 .hero {
@@ -59,7 +58,8 @@ nav li {
   /* padding: 2em 1em; */
 }
 
-.id, .wrap{
+.id,
+.wrap {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -129,7 +129,8 @@ main {
 /* ====ABOUT==== */
 
 #about {
-  padding-top: 80px;
+  padding: 7em 0 4em;
+  
 }
 
 .btnCage {
@@ -142,11 +143,9 @@ main {
   flex-direction: column;
   gap: 1em;
 }
- #profilePic {
+#profilePic {
   display: block;
   object-fit: cover;
-  
-  
 }
 
 /* ====FOOTER===== */
@@ -170,7 +169,6 @@ footer {
 .copyright p {
   margin: 0;
   text-align: left;
-
 }
 
 /* ====MEDIA QUERIES==== */
@@ -196,4 +194,29 @@ footer {
   .card2 {
     flex-direction: row-reverse;
   }
+
+  .navBar {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: .5rem 2rem;
+
+    background-color: rgba(0, 0, 0, 0.75);
+    position: fixed;
+    z-index: 99;
+  }
+
+  .dropdownNav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    height:0;
+    margin: 0;
+
+  }
+  
 } ;
