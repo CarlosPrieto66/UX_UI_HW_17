@@ -4,56 +4,78 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>About</title>
+    <title>Carlos Prieto</title>
+    <link rel="stylesheet" href="css/colors.css" />
+    <link rel="stylesheet" href="css/index.css" />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600&family=Spartan:wght@500;600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600&family=Spartan:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
   </head>
+
   <body>
-    <div class="navbar">
-      <div class="logo"><img src="images/Logo.png" alt="logo" /></div>
-      <ul class="links">
-        <li><a class="nav" href="">HOME</a></li>
-        <li><a class="nav" href="">ABOUT</a></li>
-        <li><a class="nav" href="">CONTACT</a></li>
-        <li><a class="nav" href="">MY WORK</a></li>
-        <li><a class="nav" href="">MY ART</a></li>
-      </ul>
-    </div>
-    <section class="main">
-      <div class="content">
-        <div class="profile-pic">
-          <img src="images/Profile-Pic.png" alt="Viking" />
-        </div>
-        <div class="copy">
-          <h1>ABOUT</h1>
-          <p>
-            Hello, I’m Carlos. Cuban-American, raised in Florida, living in
-            Oregon. With aspirations of moving to Japan. In my past lives, I was
-            a bartender, auto painter, martial artist, and Viking. The only
-            consistent aspect of my life has been my love for art and design.
-            <br /><br />
-            After escaping a cult, I became fascinated with how people think and
-            behave. I believe thoughtful design can improve our lives in
-            unexpected and meaningful ways. Im always stoked when I open a door
-            properly on the first try.
-            <br /><br />
-            I took a lot of detours getting into the design field. But all those
-            experiences shaped my perspective of the world in ways I dont
-            believe are common in the industry…although im sure many people
-            would say the same thing. But this is my website!
-          </p>
-          <div class="buttons">
-            <button class="secondary">Résumé</button>
-            <button class="gradient">CONTACT</button>
+    <section class="hero">
+
+      <header>
+        <nav class="mobile">
+          <div class="menu-button" >
+            <img id="menuIcon" src="images/Logo-closed-64px.png" alt="open-menu" />
           </div>
+      
+          <ul class="dropdownNav closed">
+            <li><a id=current-page class="navLink" href="index.html">HOME</a></li>
+            <li><a class="navLink" href="About.html">ABOUT</a></li>
+            <li><a class="navLink" href="#">CONTACT</a></li>
+            <li><a class="navLink" href="#my-work">MY WORK</a></li>
+            <!-- <li><a class="navLink" href="#">MY ART</a></li> -->
+          </ul>
+        </nav>
+      </header>
+
+      <div class="id">
+        <div class="title">
+          <h1>CARLOS PRIETO</h1>
+          <h3>Designer/Creator</h3>
         </div>
+        <a class="btn transparent start" href="#my-work">Lets Begin</a>
       </div>
     </section>
+
+    <main id="my-work">
+      <h2>MY WORK</h2>
+      <div class="card card1">
+        <div class="thumbnail">
+          <img src="images/Educate-Ya.png" alt="Mockup" />
+        </div>
+        <div class="copy">
+          <h3>EDUCATE YA</h3>
+          <div class="subtitle">
+            <p>NON-PROFIT</p>
+            <p>WEBSITE REDESIGN</p>
+          </div>
+          <a class="btn primary" href="#">View Case Study</a>
+        </div>
+      </div>
+
+      <div class="card card2">
+        <div class="thumbnail">
+          <img src="images/Under-Construction-Anime.jpeg" alt="Mockup" />
+        </div>
+        <div class="copy">
+          <h3>UNDER CONSTRUCTION</h3>
+          <div class="subtitle">
+            <p></p>
+            <p>WEBSITE</p>
+            <p>REDESIGN</p>
+          </div>
+          <a class="btn primary" href="#">View Case Study</a>
+        </div>
+      </div>
+    </main>
+
     <footer>
       <div class="socialmedia">
         <a href="https://www.instagram.com/di6blos/"
@@ -64,9 +86,10 @@
         /></a>
       </div>
       <div class="copyright">
-        <p>CARLOS PRIETO.</p>
-        <p>Copyright © 2021. All Rights Reserved</p>
+        <p>CARLOS PRIETO</p>
+        <p>Copyright © 2022. All Rights Reserved</p>
       </div>
     </footer>
+    <script src="index.js"></script>
   </body>
 </html>
