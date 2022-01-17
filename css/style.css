@@ -5,6 +5,7 @@
   list-style: none;
   text-decoration: none;
   box-sizing: border-box;
+  text-align: center;
   /* border: 1px solid red; */
 }
 body {
@@ -12,100 +13,38 @@ body {
   color: white;
   /* overflow: hidden; */
 }
-
-/* ======TYPOGRAPHY==== */
-
-h1 {
-  font-family: Spartan;
-  font-size: 2.125rem;
-  font-weight: 400;
+html {
+  scroll-behavior: smooth;
 }
-
-h2 {
-  font-family: Spartan;
-  font-size: 1.75rem;
-  font-weight: 500;
-}
-
-h3 {
-  font-family: Spartan;
-  font-size: 1.25rem;
-  font-weight: 500;
-}
-
-p {
-  font-family: Raleway;
-}
-
-footer {
-  font-family: Raleway;
-  font-size: 0.75rem;
-}
-
-.btn {
-  font-family: Raleway;
-  font-size: 1rem;
-  font-weight: 600;
-  color: #fff;
-}
-/* ====COMPONENTS===== */
-
-/* ------Buttons------ */
-
-.btn {
-  padding: 0.75em 1.125em;
-  border-radius: 4px;
-  cursor: pointer;
-  color: #fff;
-  text-align: center;
-}
-/* ------primary------ */
-
-.primary {
-  border: none;
-  background-color: var(--primary-500);
-  transition-duration: 350ms;
-}
-.primary:hover {
-  background-color: var(--primary-400);
-}
-/* ------secondary------ */
-
-.secondary {
-  border: none;
-  background-color: var(--secondary-500);
-  transition-duration: 350ms;
-}
-
-.secondary:hover {
-  background-color: var(--secondary-400);
-}
-/* ------transparent------ */
-
-.transparent {
-  border: solid 1px var(--primary-50);
-  background-color: var(--shades-00);
-  transition-duration: 350ms;
-}
-.transparent:hover {
-  background-color: var(--primary-50);
-  opacity: 70%;
-  color: var(--primary-900);
-}
-/* ------gradient------ */
-
 /* ====NAVIGATION==== */
-
-.mobile-nav {
-  z-index: 99;
+header {
+  width: 100%;
+}
+.mobile {
+  width: 100%;
   display: flex;
-  flex-direction: row;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
   padding: 0.5em;
-  width: 100%;
-  background-color: var(--shades-50);
+  background-color: var(--shades-75);
+  position: fixed;
+  z-index: 99;
 }
+.closed {
+  display: none;
+}
+.menu-button {
+  cursor: pointer;
+}
+.dropdownNav {
+  height: 100vh;
+  margin-top: 1em;
+  /* display: none; */
+}
+nav li {
+  margin: 2em;
+}
+
 
 /* =====HOME=====*/
 .hero {
@@ -164,7 +103,8 @@ main {
 
 .thumbnail img {
   display: block;
-  width: 100%;
+  max-width: 100%;
+  /* object-fit: cover; */
 }
 
 .copy {
@@ -185,7 +125,7 @@ main {
 
 /* ====ABOUT==== */
 
-.btn {
+.btnCage {
   display: flex;
   flex-direction: column;
   gap: 1em;

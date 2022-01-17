@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Carlos Prieto</title>
-
     <link rel="stylesheet" href="css/colors.css" />
+    <link rel="stylesheet" href="css/index.css" />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -18,13 +18,23 @@
 
   <body>
     <section class="hero">
+
       <header>
-        <nav class="mobile-nav">
-          <div class="menu-button">
-            <img src="images/Logo-64px.png" alt="V" />
+        <nav class="mobile">
+          <div class="menu-button" >
+            <img id="menuIcon" src="images/Logo-closed-64px.png" alt="open-menu" />
           </div>
+      
+          <ul class="dropdownNav closed">
+            <li><a class="navLink" href="#">HOME</a></li>
+            <li><a class="navLink" href="About.html">ABOUT</a></li>
+            <li><a class="navLink" href="#">CONTACT</a></li>
+            <li><a class="navLink" href="#my-work">MY WORK</a></li>
+            <li><a class="navLink" href="#">MY ART</a></li>
+          </ul>
         </nav>
       </header>
+
       <div class="id">
         <div class="title">
           <h1>CARLOS PRIETO</h1>
@@ -80,5 +90,6 @@
         <p>Copyright © 2022. All Rights Reserved</p>
       </div>
     </footer>
+    <script src="index.js"></script>
   </body>
 </html>
