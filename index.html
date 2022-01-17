@@ -18,29 +18,37 @@
 
   <body>
     <section class="hero">
-
       <header>
-        <nav class="mobile">
-          <div class="menu-button" >
-            <img id="menuIcon" src="images/Logo-closed-64px.png" alt="open-menu" />
+        <nav class="mobile" id="mobile">
+          <div class="menu-button">
+            <img
+              id="menuIcon"
+              src="images/Logo-closed-64px.png"
+              alt="open-menu"
+            />
           </div>
-      
+
           <ul class="dropdownNav closed">
-            <li><a id=current-page class="navLink" href="index.html">HOME</a></li>
+            <li>
+              <a id="current-page" class="navLink" href="index.html">HOME</a>
+            </li>
             <li><a class="navLink" href="About.html">ABOUT</a></li>
             <li><a class="navLink" href="#">CONTACT</a></li>
-            <li><a class="navLink" href="#my-work">MY WORK</a></li>
+            <li><a class="navLink" href="#scrollAnchor">MY WORK</a></li>
             <!-- <li><a class="navLink" href="#">MY ART</a></li> -->
           </ul>
         </nav>
       </header>
 
       <div class="id">
-        <div class="title">
-          <h1>CARLOS PRIETO</h1>
-          <h3>Designer/Creator</h3>
+        <div class="wrap">
+          <div class="title">
+            <h1>CARLOS PRIETO</h1>
+            <h3>Designer/Creator</h3>
+          </div>
+          <a class="btn transparent start" href="#scrollAnchor">Lets Begin</a>
         </div>
-        <a class="btn transparent start" href="#my-work">Lets Begin</a>
+        <div id="scrollAnchor"></div>
       </div>
     </section>
 

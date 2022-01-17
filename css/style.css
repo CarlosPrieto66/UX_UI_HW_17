@@ -62,11 +62,11 @@ nav li {
   /* padding: 2em 1em; */
 }
 
-.id {
+.id, .wrap{
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-bottom: 5em;
+  /* padding-bottom: 5em; */
   gap: 1em;
   width: 100%;
 }
@@ -77,6 +77,9 @@ nav li {
 .start {
   width: 95%;
   max-width: 404px;
+}
+#scrollAnchor {
+  height: 5em;
 }
 /* =====MY WORK=====  */
 
@@ -105,7 +108,7 @@ main {
 }
 
 .thumbnail img {
-  display: block;
+  /* display: block; */
   max-width: 100%;
   /* object-fit: cover; */
 }
@@ -127,6 +130,10 @@ main {
 }
 
 /* ====ABOUT==== */
+
+#about {
+  padding-top: 80px;
+}
 
 .btnCage {
   display: flex;
@@ -159,6 +166,8 @@ footer {
 
 .copyright p {
   margin: 0;
+  text-align: left;
+
 }
 
 /* ====MEDIA QUERIES==== */
@@ -168,7 +177,7 @@ footer {
     font-size: 18px;
   }
 
-  .id {
+  .wrap {
     flex-direction: row;
     justify-content: space-around;
     max-width: 1144px;
