@@ -20,7 +20,7 @@ html {
 header {
   width: 100%;
 }
-.mobile {
+.navBar {
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -45,9 +45,6 @@ nav li {
   margin: 2em;
 }
 
-#current-page {
-  border-bottom: var(--primary-50) solid 2px;
-}
 
 /* =====HOME=====*/
 .hero {
@@ -79,7 +76,7 @@ nav li {
   max-width: 404px;
 }
 #scrollAnchor {
-  height: 5em;
+  height: 80px;
 }
 /* =====MY WORK=====  */
 
@@ -96,7 +93,7 @@ main {
   display: flex;
   flex: 1;
   flex-flow: column;
-  /* margin: 2em 1em; */
+
   width: 100%;
   max-width: 400px;
 }
@@ -144,6 +141,12 @@ main {
   display: flex;
   flex-direction: column;
   gap: 1em;
+}
+ #profilePic {
+  display: block;
+  object-fit: cover;
+  
+  
 }
 
 /* ====FOOTER===== */

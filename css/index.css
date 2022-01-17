@@ -26,9 +26,20 @@ h3 {
   font-weight: 500;
   color: var(--primary-50);
 }
+.navLink:hover {
+  color: var(--primary-300);
+}
+
+#current-page {
+  border-bottom: var(--primary-50) solid 2px;
+}
+#current-page:hover {
+  color: var(--primary-50);
+}
 
 p {
   font-family: Raleway;
+  line-height: 23px;
 }
 
 footer {
@@ -42,6 +53,8 @@ footer {
   font-weight: 600;
   color: #fff;
 }
+
+
 /* ====COMPONENTS===== */
 
 /* ------Buttons------ */
