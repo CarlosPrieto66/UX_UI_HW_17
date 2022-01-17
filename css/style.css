@@ -30,21 +30,24 @@ header {
   position: fixed;
   z-index: 99;
 }
-.closed {
-  display: none;
-}
 .menu-button {
   cursor: pointer;
 }
+.closed {
+  display: none;
+}
+
 .dropdownNav {
   height: 100vh;
   margin-top: 1em;
-  /* display: none; */
 }
 nav li {
   margin: 2em;
 }
 
+#current-page {
+  border-bottom: var(--primary-50) solid 2px;
+}
 
 /* =====HOME=====*/
 .hero {
