@@ -84,8 +84,8 @@ main {
   display: flex;
   flex-flow: column;
   align-items: center;
-  padding: 7em 0 4em;
-  gap: 2em;;
+  padding: 7em 2em ;
+  gap: 2em;
   /* align-content: center; */
 }
 
