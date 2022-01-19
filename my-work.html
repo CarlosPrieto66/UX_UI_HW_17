@@ -19,22 +19,24 @@
   <body>
     <header>
       <nav class="navBar" id="navBar">
-        <div class="menu-button" >
-          <img id="menuIcon" src="images/Logo-closed-64px.png" alt="open-menu" />
+        <div class="menu-button">
+          <img
+            id="menuIcon"
+            src="images/Logo-closed-64px.png"
+            alt="open-menu"
+          />
         </div>
-    
+
         <ul class="dropdownNav closed">
-          <li><a  class="navLink" href="index.html">HOME</a></li>
+          <li><a class="navLink" href="index.html">HOME</a></li>
           <!-- <li><a class="navLink" href="About.html">ABOUT</a></li> -->
+          <li><a id="current-page" class="navLink" href="#">MY WORK</a></li>
           <li><a class="navLink" href="#">CONTACT</a></li>
-          <li><a  id="current-page" class="navLink" href="#">MY WORK</a></li>
           <!-- <li><a class="navLink" href="#">MY ART</a></li> -->
         </ul>
       </nav>
     </header>
 
-    
-    
     <main id="my-work">
       <h2>MY WORK</h2>
       <div class="card card1">
@@ -81,7 +83,6 @@
         </div>
       </div>
     </main>
-    
 
     <footer>
       <div class="socialmedia">
@@ -98,6 +99,11 @@
       </div>
     </footer>
     <script src="index.js"></script>
-
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.js"
+      integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://code.jquery.com/ui/1.13.0/jquery-ui.js"></script>
   </body>
 </html>

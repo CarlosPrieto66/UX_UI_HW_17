@@ -17,4 +17,8 @@ menuBtn.addEventListener('click', (e) => {
   }
 })
 
-
+// $(".menu-button").on("click", function(){
+//   // $(".toggleMe").toggle();
+//    console.log("clickedButton")
+//   $(".dropdownNav").slideToggle();
+// });
