@@ -24,7 +24,9 @@ h3 {
   font-weight: 500;
   color: var(--primary-50);
   transition: 350ms;
+  text-decoration: none;
 }
+
 
 .navLink:hover {
   color: var(--primary-300);
@@ -67,17 +69,16 @@ footer {
   text-align: center;
   transition: 350ms ease-in-out;
 }
-.btn:hover {
-  box-shadow: 0px 10px 10px var(--shades-50);
-}
+
 /* ------primary------ */
 
 .primary {
   border: none;
   background-color: var(--primary-500);
 }
-.primary:hover,
-:focus {
+.primary:hover
+ {
+  box-shadow: 0px 10px 10px var(--shades-50);
   background-color: var(--primary-400);
 }
 /* ------secondary------ */
@@ -87,8 +88,9 @@ footer {
   background-color: var(--secondary-500);
 }
 
-.secondary:hover,
-:focus {
+.secondary:hover
+{
+  box-shadow: 0px 10px 10px var(--shades-50);
   background-color: var(--secondary-400);
 }
 /* ------transparent------ */
@@ -97,8 +99,7 @@ footer {
   border: solid 1px var(--primary-50);
   background-color: var(--shades-00);
 }
-.transparent:hover,
-:focus {
+.transparent:hover {
   background-color: var(--primary-50);
   opacity: 70%;
   color: var(--primary-900);
