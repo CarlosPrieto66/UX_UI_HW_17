@@ -14,6 +14,10 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600&family=Spartan:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    
+
   </head>
 
   <body>
@@ -22,16 +26,12 @@
       <!-- header is nested inside the hero section to keep the
       background image behind the nav bar -->
       <header>
-        <nav class="navBar" id="navBar">
-          <div class="menu-button">
-            <img
-              id="menuIcon"
-              src="images/Logo-closed-64px.png"
-              alt="open-menu"
-            />
+        <nav class="navbar">
+          <div class="menu-toggle">
+            <div class="menu-icon"></div>
           </div>
 
-          <ul class="dropdownNav closed">
+          <ul class="nav-dropdown">
             <li>
               <a id="current-page" class="navLink" href="index.html">HOME</a>
             </li>
@@ -116,5 +116,6 @@
       </div>
     </footer>
     <script src="index.js"></script>
+    
   </body>
 </html>

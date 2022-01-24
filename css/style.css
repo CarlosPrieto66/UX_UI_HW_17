@@ -20,7 +20,7 @@ html {
 header {
   width: 100%;
 }
-.navBar {
+.navbar {
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -29,22 +29,66 @@ header {
   background-color: var(--shades-75);
   position: fixed;
   z-index: 99;
-}
-.menu-button {
-  cursor: pointer;
-}
-.closed {
-  display: none;
+} 
+
+.navbar-open {
+background-color: var(--shades-95);
+
 }
 
-.dropdownNav {
-  height: 100vh;
+.nav-dropdown {
   margin-top: 1em;
+  height: 100vh;
+  display: none;
+
+}
+
+.nav-dropdown-open {
+  display: block;
+  background-color: var(--shades-95);
 }
 nav li {
   margin: 2em 1em;
 }
+/* -----Menu Icon------ */
 
+.menu-toggle {
+  background: transparent;
+  cursor: pointer;
+  padding: 32px;
+}
+
+.menu-icon,
+.menu-icon:before,
+.menu-icon:after {
+  
+  content: '';
+  display: block;
+  background: #B828A2;
+  width: 64px;
+  height: 6px;
+  border-radius: 6px;
+  transition: all ease-in-out 500ms;
+}
+
+.menu-icon:before {
+  transform:translateX(-11.5px) rotate(67deg);
+}
+
+.menu-icon:after {
+  transform:translateX(11.5px) translateY(-5.5px) rotate(-67deg);
+}
+.menu-open .menu-icon {
+  transform: translateY(32px)
+  }
+
+.menu-open .menu-icon:before {
+  transform:translateX(4px) translateY(-32px) rotate(45deg);
+}
+
+.menu-open .menu-icon:after {
+  transform: translateX(-2px) translateY(-38px) rotate(-45deg);
+}
 /* =====HOME=====*/
 .hero {
   display: flex;
@@ -208,7 +252,7 @@ footer {
     z-index: 99;
   }
 
-  .dropdownNav {
+  .nav-dropdown {
     display: flex;
     flex-direction: row;
     justify-content: center;
