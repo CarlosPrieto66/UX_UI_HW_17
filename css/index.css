@@ -18,7 +18,7 @@ h3 {
   font-weight: 500;
 }
 
-.navLink {
+.nav-link {
   font-family: Spartan;
   font-size: 18px;
   font-weight: 500;
@@ -28,7 +28,7 @@ h3 {
 }
 
 
-.navLink:hover {
+.nav-link:hover {
   color: var(--primary-300);
 }
 
@@ -96,7 +96,8 @@ footer {
 }
 /* ------transparent------ */
 
-.transparent {
+.transparent,
+.transparent:active {
   border: solid 1px var(--primary-50);
   background-color: var(--shades-00);
 }

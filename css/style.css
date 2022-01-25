@@ -41,16 +41,17 @@ background-color: var(--shades-95);
   margin-top: 1em;
   height: 100vh;
   display: none;
-
 }
 
 .nav-dropdown-open {
-  display: block;
-  background-color: var(--shades-95);
+  display: block;;
+
 }
 nav li {
   margin: 2em 1em;
 }
+
+
 /* -----Menu Icon------ */
 
 .menu-toggle {
