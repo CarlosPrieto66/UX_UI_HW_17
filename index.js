@@ -21,8 +21,8 @@
 
 $('.menu-toggle').click(function() {
 
-  $('.navbar').toggleClass('navbar-open', 500);
-  $('.nav-dropdown').toggleClass('nav-dropdown-open', 500);
+  $('.navbar').toggleClass('navbar-open');
+  $('.nav-dropdown').toggleClass('nav-dropdown-open');
 
   $(this).toggleClass('menu-open');
 

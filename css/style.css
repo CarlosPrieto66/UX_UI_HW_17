@@ -44,8 +44,8 @@ background-color: var(--shades-95);
 }
 
 .nav-dropdown-open {
-  display: block;
-  background-color: var(--shades-95);
+  display: block;;
+
 }
 nav li {
   margin: 2em 1em;
