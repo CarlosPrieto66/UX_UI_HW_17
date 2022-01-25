@@ -105,4 +105,7 @@
   --error-700: #b91c1c;
   --error-800: #991b1b;
   --error-900: #7f1d1d;
+ --gradient-left: linear-gradient(90deg, #9F49FE , #C32FD6, #F90898);
+ --gradient-right: linear-gradient(90deg, #F90898, #C32FD6, #9F49FE );
+
 }

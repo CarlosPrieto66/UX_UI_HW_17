@@ -15,6 +15,7 @@ body {
 }
 html {
   scroll-behavior: smooth;
+  scroll-padding-top: 80px;
 }
 /* ====NAVIGATION==== */
 header {
@@ -57,14 +58,15 @@ nav li {
   cursor: pointer;
   padding: 32px;
 }
-
 .menu-icon,
 .menu-icon:before,
 .menu-icon:after {
   
   content: '';
   display: block;
-  background: #B828A2;
+  background: var(--gradient-left);
+  background-size: 200%;
+  animation: bg-gradient 6s infinite;
   width: 64px;
   height: 6px;
   border-radius: 6px;
@@ -72,6 +74,8 @@ nav li {
 }
 
 .menu-icon:before {
+  background: var(--gradient-right);
+  background-size: 200%;
   transform:translateX(-11.5px) rotate(67deg);
 }
 
@@ -89,6 +93,12 @@ nav li {
 .menu-open .menu-icon:after {
   transform: translateX(-2px) translateY(-38px) rotate(-45deg);
 }
+
+@keyframes bg-gradient {
+  0% {background-position:left;}
+  50% {background-position:right;}
+  100% {background-position:left;}
+}
 /* =====HOME=====*/
 .hero {
   display: flex;
@@ -102,26 +112,24 @@ nav li {
   /* padding: 2em 1em; */
 }
 
-.id,
 .wrap {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 0;
+  padding: 0 1em 80px;
   gap: 1em;
   width: 100%;
 }
 
 .title {
   text-align: center;
+  margin: 1em;
 }
-.start {
+.start-btn {
   width: 95%;
-  max-width: 404px;
+  max-width: 400px;
 }
-#scrollAnchor {
-  height: 80px;
-}
+
 /* =====MY WORK=====  */
 
 main {
@@ -224,7 +232,7 @@ footer {
 
   .wrap {
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     max-width: 1144px;
   }
 

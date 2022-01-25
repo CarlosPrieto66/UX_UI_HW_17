@@ -67,6 +67,7 @@ footer {
   cursor: pointer;
   color: #fff;
   text-align: center;
+  cursor: pointer;
   transition: 350ms ease-in-out;
 }
 
@@ -105,3 +106,11 @@ footer {
   color: var(--primary-900);
 }
 /* ------gradient------ */
+
+.gradient {
+  color: white;
+  background-image: var(--gradient);
+
+
+
+}
