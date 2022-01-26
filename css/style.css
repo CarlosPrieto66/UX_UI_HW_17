@@ -30,27 +30,27 @@ header {
   background-color: var(--shades-75);
   position: fixed;
   z-index: 99;
-} 
+}
 
 .navbar-open {
-background-color: var(--shades-95);
-
+  background-color: var(--shades-95);
 }
 
 .nav-dropdown {
-  margin-top: 1em;
-  height: 100vh;
-  display: none;
+  height: 0vh;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 500ms ease-in-out;
 }
 
 .nav-dropdown-open {
-  display: block;;
-
+  height: 100vh;
+  opacity: 1;
+  pointer-events: all;
 }
 nav li {
-  margin: 2em 1em;
+  margin: 4em 1em;
 }
-
 
 /* -----Menu Icon------ */
 
@@ -62,8 +62,7 @@ nav li {
 .menu-icon,
 .menu-icon:before,
 .menu-icon:after {
-  
-  content: '';
+  content: "";
   display: block;
   background: var(--gradient-left);
   background-size: 200%;
@@ -77,18 +76,18 @@ nav li {
 .menu-icon:before {
   background: var(--gradient-right);
   background-size: 200%;
-  transform:translateX(-11.5px) rotate(67deg);
+  transform: translateX(-11.5px) rotate(67deg);
 }
 
 .menu-icon:after {
-  transform:translateX(11.5px) translateY(-5.5px) rotate(-67deg);
+  transform: translateX(11.5px) translateY(-5.5px) rotate(-67deg);
 }
 .menu-open .menu-icon {
-  transform: translateY(32px)
-  }
+  transform: translateY(32px);
+}
 
 .menu-open .menu-icon:before {
-  transform:translateX(4px) translateY(-32px) rotate(45deg);
+  transform: translateX(4px) translateY(-32px) rotate(45deg);
 }
 
 .menu-open .menu-icon:after {
@@ -96,9 +95,15 @@ nav li {
 }
 
 @keyframes bg-gradient {
-  0% {background-position:left;}
-  50% {background-position:right;}
-  100% {background-position:left;}
+  0% {
+    background-position: left;
+  }
+  50% {
+    background-position: right;
+  }
+  100% {
+    background-position: left;
+  }
 }
 /* =====HOME=====*/
 .hero {
@@ -137,7 +142,7 @@ main {
   display: flex;
   flex-flow: column;
   align-items: center;
-  padding: 7em 1em ;
+  padding: 7em 1em;
   gap: 2em;
   /* align-content: center; */
 }
@@ -146,7 +151,7 @@ main {
   display: flex;
   flex: 1;
   flex-flow: column;
-  box-shadow: 5px 15px 15px var(--shades-50),  -5px 0px 15px var(--shades-50);
+  box-shadow: 5px 15px 15px var(--shades-50), -5px 0px 15px var(--shades-50);
   width: 100%;
   max-width: 400px;
 }
@@ -183,7 +188,6 @@ main {
 
 #about {
   padding: 2em 1em 4em;
-  
 }
 
 .btnCage {
@@ -254,7 +258,7 @@ footer {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: .5rem 2rem;
+    padding: 0.5rem 2rem;
 
     background-color: rgba(0, 0, 0, 0.75);
     position: fixed;
@@ -267,9 +271,9 @@ footer {
     justify-content: center;
     align-items: center;
     padding: 0px;
-    height:0;
+    opacity: 1;
     margin: 0;
+  pointer-events: all;
 
   }
-  
 } ;
