@@ -22,8 +22,10 @@
 $('.menu-toggle').click(function() {
 
   $('.navbar').toggleClass('navbar-open');
-  $('.nav-dropdown').toggleClass('nav-dropdown-open');
+  $('.nav-dropdown').slideToggle(500);
 
   $(this).toggleClass('menu-open');
 
-})
+});
+
+
