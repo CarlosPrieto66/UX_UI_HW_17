@@ -228,6 +228,9 @@ footer {
   text-align: left;
 }
 
+embed {
+  
+}
 /* ====MEDIA QUERIES==== */
 
 @media (min-width: 768px) {
